@@ -45,7 +45,7 @@ const ContactForm = () => {
 
   return (
     <article>
-    <form onSubmit={submitHandler} className="flex flex-col sm:w-3/4 md:w-2/4 lg:w-1/5 mx-auto">
+    <form onSubmit={submitHandler} className="flex flex-col notebook:w-2/3  mx-auto">
       <label className="my-2">Tu nombre</label>
       <input
         type="text"

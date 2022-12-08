@@ -17,13 +17,13 @@ const Footer = () => {
     );
   });
   return (
-    <section className="bg-[#1a1f16]  sm:p-4 md:p-6 ">
+    <section className="bg-[#1a1f16]  py-[3rem]  ">
       
-      <article className=" sm:mx-[10px] lg:mx-[200px] flex flex-row justify-between lg:justify-around">
+      <article className=" mx-[2rem] notebook:mx-[8rem] flex flex-row justify-between ">
 
       <article className=" text-left text-[#fdffe6]">
-        <div className="sm:text-[16px] md:text-2xl font-bold ">MR Estudio</div>
-        <div className="sm:text-[10px] md:text-sm  ">
+        <div className="text-[1.5rem] notebook:text-[2rem] font-bold ">MR Estudio</div>
+        <div className="text-[0.9rem] notebook:text-[0.9rem] ">
           Buenos Aires, Argentina
           <br />
           hello@mrstudio.com

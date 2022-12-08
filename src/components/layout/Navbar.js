@@ -31,12 +31,12 @@ const Navbar = () => {
 
   return (
     <section className="bg-[#1a1f16] w-full">
-      <article className="  flex flex-row h-[5rem] justify-between mx-[2rem]  desktop:mx-[8rem]">
-        <div className="text-[#fdffe6] font-bold text-[1.5rem]  desktop:text-[2rem] grow my-auto mx-auto">
+      <article className="  flex flex-row h-[5rem] justify-between mx-[2rem]  notebook:mx-[8rem]">
+        <div className="text-[#fdffe6] font-bold text-[1.5rem]  notebook:text-[2rem] grow my-auto mx-auto">
           MR Estudio
         </div>
 
-        <div className="text-[#fdffe6] hidden desktop:flex text-[1.1rem] flex-row my-auto">
+        <div className="text-[#fdffe6] hidden notebook:flex text-[1.1rem] flex-row my-auto">
           <ul className="flex flex-row ">{titlesMap}</ul>
         </div>
 
