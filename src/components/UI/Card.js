@@ -1,28 +1,25 @@
 import { useState } from "react";
 
-
 const Card = (props) => {
-
-  const [bgimg, setBgimg] = useState(false)
+  const [mouseEntered, setMouseEntered] = useState(false);
 
   const mouseEnterHandler = () => {
-    setBgimg(true);
+    setMouseEntered(true);
   };
 
-  const mouseLeaveHandler = () => {
-    setBgimg(false);
-  }
+  const mouseLeftHandler = () => {
+    setMouseEntered(false);
+  };
 
   return (
-    <div className="md:w-[387px] md:h-[387px]  overflow-hidden mx-auto my-10 group" onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
-
-      <img
-        className="w-full object-fill duration-[4000ms]  "
-        src={!bgimg ? props.bgimg : props.image}
-        alt=""
-      />
-
+    <div onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeftHandler} className="relative   mb-[2rem] " >
+      
+      {mouseEntered && <div className="text-[2rem]  text-white font-bold absolute   left-[50%] top-[50%] translate-x-[-50%]  translate-y-[-50%]" >{props.message}</div>}
+      <img src={mouseEntered ? props.blurredImage : props.image}  alt=" " /> 
+      
+      
     </div>
+    
   );
 };
 

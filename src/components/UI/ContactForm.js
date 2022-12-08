@@ -64,7 +64,7 @@ const ContactForm = () => {
         className="bg-[#1a1f16] hover:bg-[#f5ff00] text-[#f5ff00] hover:text-[#1a1f16] rounded-t-[8px] rounded-l-[8px] p-2"
       />
 
-      <Button classes="bg-[#1a1f16] text-[#f5ff00] text-[15px] mx-auto my-4 rounded-t-[8px] rounded-l-[8px] w-[118px] h-[30px] hover:font-4xl hover:w-[125px] hover:h-[32px] hover:ease-in-out duration-300 ">
+      <Button classes="bg-[#1a1f16] text-[#f5ff00] text-[15px] mx-auto my-4 rounded-t-[8px] rounded-l-[8px] w-[118px] h-[30px]  ">
         enviar
       </Button>
     </form>

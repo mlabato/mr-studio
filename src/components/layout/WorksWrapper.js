@@ -1,42 +1,34 @@
-import { useState } from "react";
-
-import Button from "../UI/Button";
-import Slider from "../UI/Slider";
-import SmallSlider from "../UI/SmallSlider";
+import Card from "../UI/Card";
 
 const WorksWrapper = () => {
-  const [selectSlider, setSelectSlider] = useState(0);
-
-  const webDesignSliderHandler = () => {
-    setSelectSlider(0);
-  };
-
-  const redesSliderHandler = () => {
-    setSelectSlider(1);
-  };
-
-  const uxSliderHandler = () => {
-    setSelectSlider(2);
-  };
-
   return (
-    <section id="clients" className="flex flex-col sm:p-2 md:p-4">
-      <h1 className=" sm:text-2xl md:text-2xl lg:text-4xl text-center text-black font-bold p-4">
-        Nuestros trabajos
-      </h1>
+    <section className="flex flex-col bg-[#1a1f16] py-[5rem]  ">
+      <p className="font-bold text-[2.3rem] mx-auto mb-[2rem] text-[#fdffe6]">
+        nuestros trabajos
+      </p>
+      <article className="flex flex-row mx-[8rem] ">
+        <div className="flex flex-col w-1/2 mr-[2rem]  justify-between">
+          <Card
+            blurredImage={"/images/mlabatoportBLUR.jpg"}
+            image={"/images/mlabatoport.jpg"}
+            message={"diseño web"}
+          />
 
-      <article className=" flex flex-row mx-auto my-5">
-        <Button onClick={redesSliderHandler}>redes</Button>
-        <Button onClick={webDesignSliderHandler}>diseño web</Button>
-        <Button onClick={uxSliderHandler}>UX</Button>
+          <Card
+            blurredImage={"/images/marcalujanBLUR.png"}
+            image={"/images/marcalujan.jpg"}
+            message={"branding"}
+          />
+        </div>
+      <div className="w-1/2">
+        <Card
+          blurredImage={"/images/tallpiaBLUR.jpg"}
+          image={"/images/tallpia.jpg"}
+          message={"redes sociales"}
+          
+        />
+        </div>
       </article>
-      {window.innerWidth <= 1024 ? (
-        <SmallSlider sliderIndex={selectSlider} />
-      ) : (
-        <Slider sliderIndex={selectSlider} />
-      )}
-
-      {console.log(window.innerWidth)}
     </section>
   );
 };

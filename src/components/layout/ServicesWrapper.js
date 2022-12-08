@@ -1,52 +1,44 @@
 const ServicesWrapper = () => {
-  const steps = [
-    {
-      num: "1.",
-      step: "ESCUCHAMOS",
-      description: "Conocemos tus necesidades",
-    },
-    {
-      num: "2.",
-      step: "PENSAMOS",
-      description: "Delineamos juntos un plan",
-    },
-    {
-      num: "3.",
-      step: "DIALOGAMOS",
-      description: "Debatimos con vos las soluciones",
-    },
-    {
-      num: "4.",
-      step: "IMPLEMENTAMOS",
-      description: "Hacemos realidad las ideas",
-    },
-  ];
+  return (
+    <section className="py-[7rem] flex flex-col bg-[#fdffe6]">
+      <article className="flex flex-row items-start mx-[8rem] mb-[2rem]">
+        <div className="font-bold text-[2.3rem]  w-1/2">sobre nosotros</div>
 
-  const stepsMap = steps.map((step, i) => {
-    return (
-      <li id="services" className="group sm:w-full md:w-3/5  flex flex-col   " key={i}>
-        <div className="flex flex-row">
-          <div className=" sm:text-[30px] md:text-[40px]  lg:text-[90px] text-[#f5ff00] lg:hidden ease-in-out duration-300 md:group-hover:block font-extrabold  ">
-            {step.num}
-          </div>
-          <div className=" sm:text-[20px] md:text-[40px] lg:text-[60px]  md:group-hover:text-[90px] ease-in-out duration-300  font-extrabold mx-3 my-auto ">
-            {step.step}
-          </div>
-          </div>
-       
-        
-        <div className="hidden md:group-hover:block sm:text:[10px] md:text-2xl ">
-          {step.description}
+        <div className="w-3/4 text-[1.1rem] ml-[8rem]">
+          Somos un estudio de diseño especializado en social media, desarrollos
+          web y diseño gráfico.
         </div>
-      </li>
-    );
-  }); 
+      </article>
 
-  return <section className="flex flex-col mx-auto w-full bg-white sm:p-2 md:p-4 ">
-    <ul className="mx-auto">
-    {stepsMap}
-    </ul>
-    </section>;
+      <article className="flex flex-row items-start mx-[8rem] ">
+        <div className="font-bold text-[2.3rem] w-1/2 ">que hacemos</div>
+
+        <div className="w-3/4 text-[1.1rem] ml-[8rem] ">
+          <div className="py-[.5rem] border-black border-b-2 mb-[1rem]">
+            <p className="font-bold">diseño gráfico</p>
+            <p className="text-[.9rem]">
+              creamos marcas con su propia identidad a partir de un minucioso
+              estudio de las necesidades y objetivos del cliente.
+            </p>
+          </div>
+          <div className="py-[.5rem] border-black border-b-2 mb-[1rem]">
+            <p className="font-bold">social media</p>
+            <p className="text-[.9rem]">
+              creamos marcas con su propia identidad a partir de un minucioso
+              estudio de las necesidades y objetivos del cliente.
+            </p>
+          </div>
+          <div className="py-[.5rem] border-black border-b-2 mb-[1rem]">
+            <p className="font-bold">diseño web</p>
+            <p className="text-[.9rem]">
+              creamos marcas con su propia identidad a partir de un minucioso
+              estudio de las necesidades y objetivos del cliente.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+  );
 };
 
 export default ServicesWrapper;

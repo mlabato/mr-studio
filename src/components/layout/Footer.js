@@ -17,16 +17,16 @@ const Footer = () => {
     );
   });
   return (
-    <section className="bg-black   sm:p-4 md:p-6 ">
+    <section className="bg-[#1a1f16]  sm:p-4 md:p-6 ">
       
       <article className=" sm:mx-[10px] lg:mx-[200px] flex flex-row justify-between lg:justify-around">
 
       <article className=" text-left text-[#fdffe6]">
         <div className="sm:text-[16px] md:text-2xl font-bold ">MR Estudio</div>
         <div className="sm:text-[10px] md:text-sm  ">
-          30 N Gould St STE N Sheridan, WY 82801
+          Buenos Aires, Argentina
           <br />
-          Tel. +1 307 206-9431
+          hello@mrstudio.com
           <br />
           <br />
           © 2022 - MR Studio

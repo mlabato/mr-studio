@@ -19,7 +19,7 @@ const ProfileCard = () => {
   const adminMap = admins.map((admin, i) => {
     return (
       <div
-        className="bg-[#fdffe6] sm:my-2 md:my-6 lg:my-12 pb-6 sm:w-full lg:w-1/4  justify-center items-center overflow-hidden rounded-lg shadow-sm sm:mx-auto md:mx-2 lg:mx-auto"
+        className="bg-[#fdffe6] my-12 pb-6 w-2/3 mr-[3rem] justify-center items-center overflow-hidden  shadow-sm mx-auto"
         key={i}
       >
         <div className="relative sm:h-[55px] md:h-40    ">
@@ -56,7 +56,7 @@ const ProfileCard = () => {
     );
   });
 
-  return <div className="flex md:flex-row sm:flex-col w-3/4 mx-auto">{adminMap}</div>;
+  return <div className="flex md:flex-row sm:flex-col mx-[8rem]">{adminMap}</div>;
 };
 
 export default ProfileCard;
