@@ -19,12 +19,12 @@ const ProfileCard = () => {
   const adminMap = admins.map((admin, i) => {
     return (
       <div
-        className="bg-[#fdffe6] my-12 pb-6 w-2/3 mr-[3rem] justify-center items-center overflow-hidden  shadow-sm mx-auto"
+        className="bg-[#fdffe6] my-[1rem] pb-[1rem] notebook:my-[3rem]  notebook:w-2/3 notebook:mr-[3rem] justify-center items-center overflow-hidden  shadow-sm "
         key={i}
       >
-        <div className="relative sm:h-[55px] md:h-40    ">
+        <div >
           <img
-            className="absolute h-full w-full sm:hidden md:block object-cover"
+            className=" h-[6rem] w-full  object-cover"
             src={admin.bgimg}
             alt=""
           />
@@ -56,7 +56,7 @@ const ProfileCard = () => {
     );
   });
 
-  return <div className="flex md:flex-row sm:flex-col mx-[8rem]">{adminMap}</div>;
+  return <div className="flex flex-col notebook:flex-row mx-[2rem]  notebook:mx-[8rem]">{adminMap}</div>;
 };
 
 export default ProfileCard;

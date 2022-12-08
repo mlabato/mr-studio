@@ -38,6 +38,13 @@ module.exports = {
         transDown: "transDown 1s ease-in-out ",
         swing: "swing 1s ease-in-out"
       },
+      screens: {
+        'mobile': '400px',
+        'notebook': '1024px',
+        'desktop': '1240px',
+        'bigdesktop': '1366px',
+        'full': '1920px',
+      }
     },
   },
   plugins: [],

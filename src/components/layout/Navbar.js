@@ -17,10 +17,10 @@ const Navbar = () => {
 
   const titlesMap = titles.map((title, i) => {
     return (
-      <li className= " sm:py-1 md:px-2 hover:animate-swing  " key={i}>
+      <li className= " mx-[.5rem] text-center py-1 desktop:px-2 desktop:hover:animate-swing  " key={i}>
         <a
           href={title.link}
-          className=  "lg:border-solid   hover:text-[#f5ff00] hover:font-bold "
+          className=  "  hover:text-[#f5ff00] hover:font-bold "
         >
           {" "}
           {title.title}{" "}
@@ -31,12 +31,12 @@ const Navbar = () => {
 
   return (
     <section className="bg-[#1a1f16] w-full">
-      <article className="  flex flex-row h-[5rem] justify-between  mx-[8rem]">
-        <div className="text-[#fdffe6] font-bold  text-[2rem] grow my-auto mx-auto">
+      <article className="  flex flex-row h-[5rem] justify-between mx-[2rem]  desktop:mx-[8rem]">
+        <div className="text-[#fdffe6] font-bold text-[1.5rem]  desktop:text-[2rem] grow my-auto mx-auto">
           MR Estudio
         </div>
 
-        <div className="text-[#fdffe6] sm:hidden lg:block text-[1.1rem] flex flex-row my-auto">
+        <div className="text-[#fdffe6] hidden desktop:flex text-[1.1rem] flex-row my-auto">
           <ul className="flex flex-row ">{titlesMap}</ul>
         </div>
 
@@ -49,8 +49,8 @@ const Navbar = () => {
       </article>
 
 
-      <div className= {(displayMenu ? " h-[120px] left-0" : " h-0 -left-full") + " relative  sm:ml-[20px] md-hidden text-sm duration-500 transition-all  text-[#fdffe6]" }>
-          <ul className= "flex-col w-full">{titlesMap}</ul>
+      <div className= {(displayMenu ? " h-[20px] left-0" : " h-0 -left-full") + " relative mx-[2rem] desktop:hidden duration-500 transition-all  text-[#fdffe6]" }>
+          <ul className= "flex flex-row w-full">{titlesMap}</ul>
       </div>
 
 

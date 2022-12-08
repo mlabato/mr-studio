@@ -38,15 +38,7 @@ const Footer = () => {
       </article>
 
       
-        <div className="flex flex-col p-4">
-          <h1 className="text-[#fdffe6] sm:text-[12px] md:text-xl text-center ">Seguinos en nuestras redes</h1>
-          <div className="flex flex-row p-2 mx-auto">
-            <FaInstagram className="text-[#fdffe6] hover:text-[#f5ff00] sm:text-[14px] md:text-xl mx-2" />
-            <FaFacebook className="text-[#fdffe6] hover:text-[#f5ff00] sm:text-[14px] md:text-xl mx-2" />
-            <FaTwitter className="text-[#fdffe6] hover:text-[#f5ff00] sm:text-[14px] md:text-xl mx-2" />
 
-          </div>
-        </div>
       
         </article>
 
