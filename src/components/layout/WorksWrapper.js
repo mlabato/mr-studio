@@ -12,12 +12,14 @@ const WorksWrapper = () => {
             blurredImage={"/images/mlabatoportBLUR.jpg"}
             image={"/images/mlabatoport.jpg"}
             message={"diseño web"}
+            link={"https://portfolio-mlabato.vercel.app/"}
           />
 
           <Card
             blurredImage={"/images/marcalujanBLUR.png"}
             image={"/images/marcalujan.jpg"}
             message={"branding"}
+            link={"https://marca.lujan.gob.ar/"}
           />
         </div>
         <div className="notebook:w-1/2">
@@ -25,6 +27,7 @@ const WorksWrapper = () => {
             blurredImage={"/images/tallpiaBLUR.jpg"}
             image={"/images/tallpia.jpg"}
             message={"redes sociales"}
+            link={"https://www.instagram.com/pia_pesca/"}
           />
         </div>
       </article>

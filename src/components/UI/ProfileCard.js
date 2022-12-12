@@ -1,3 +1,5 @@
+import { FaLinkedin } from "react-icons/fa";
+
 const ProfileCard = () => {
   const admins = [
     {
@@ -5,7 +7,16 @@ const ProfileCard = () => {
       bgimg: "/images/code.jpg",
       name: "Martin",
       description: "Abogado devenido en front end developer",
-      skills: ["JavaScript", "React", "CSS", "HMTL", "Tailwind", "Redux", "Next.js"],
+      skills: [
+        "JavaScript",
+        "React",
+        "CSS",
+        "HMTL",
+        "Tailwind",
+        "Redux",
+        "Next.js",
+      ],
+      linkedin: "https://www.linkedin.com/in/luismartinlab/"
     },
     {
       img: "/images/rr.jfif",
@@ -13,6 +24,7 @@ const ProfileCard = () => {
       name: "Rodrigo",
       description: "Diseñador gráfico, community manager",
       skills: ["PS", "Figma", "Instagram", "Google Ads", "Adobe Illustrator"],
+      linkedin: "https://www.linkedin.com/in/rodrigo-rivero-67337247"
     },
   ];
 
@@ -22,7 +34,7 @@ const ProfileCard = () => {
         className="bg-[#fdffe6] my-[1rem] pb-[1rem] notebook:my-[3rem]  notebook:w-2/3 notebook:mx-[1rem] desktop:mx-[6rem] justify-center items-center overflow-hidden  shadow-sm "
         key={i}
       >
-        <div >
+        <div>
           <img
             className=" h-[6rem] w-full  object-cover"
             src={admin.bgimg}
@@ -35,10 +47,18 @@ const ProfileCard = () => {
         </div>
 
         <div className="mt-16 desktop:mb-[1rem]">
-          <h1 className="text-lg desktop:text-[2rem] text-black text-center font-semibold">{admin.name}</h1>
+          <h1 className="text-lg desktop:text-[2rem] text-black text-center font-semibold">
+            {admin.name}
+          </h1>
         </div>
 
-        <h1 className="text-sm desktop:text-[1.7rem] text-black text-center mx-2 ">{admin.description}</h1>
+        <div className="text-sm desktop:text-[1.7rem] text-black text-center mx-2  ">
+          <p>{admin.description}</p>
+        </div>
+        
+        <a href={admin.linkedin} className="flex justify-center text-[1.5rem] desktop:text-[2.5rem] mt-[1rem]">
+          <FaLinkedin />
+        </a>
 
         <div className="mt-6  pt-3 flex flex-wrap mx-6 border-t">
           {admins[i].skills.map((skill, y) => {
@@ -56,7 +76,11 @@ const ProfileCard = () => {
     );
   });
 
-  return <div className="flex flex-col notebook:flex-row notebook:justify-center mx-[2rem]  notebook:mx-[8rem] desktop:mx-[10rem]">{adminMap}</div>;
+  return (
+    <div className="flex flex-col notebook:flex-row notebook:justify-center mx-[2rem]  notebook:mx-[8rem] desktop:mx-[10rem]">
+      {adminMap}
+    </div>
+  );
 };
 
 export default ProfileCard;
