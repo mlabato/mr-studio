@@ -45,26 +45,26 @@ const ContactForm = () => {
 
   return (
     <article>
-    <form onSubmit={submitHandler} className="flex flex-col notebook:w-2/3  mx-auto">
-      <label className="my-2">Tu nombre</label>
+    <form onSubmit={submitHandler} className="flex flex-col notebook:w-2/3 desktop:w-1/2  mx-auto">
+      <label className="my-2 desktop:text-[2rem]">Tu nombre</label>
       <input
         type="text"
         ref={nameRef}
-        className="bg-[#1a1f16] hover:bg-[#f5ff00] text-[#f5ff00] hover:text-[#1a1f16] rounded-t-[8px] rounded-l-[8px] p-2 h-[30px]"
+        className="bg-[#1a1f16] hover:bg-[#f5ff00] text-[#f5ff00] hover:text-[#1a1f16] rounded-t-[8px] rounded-l-[8px] p-2 h-[30px] desktop:h-[3rem] desktop:text-[2rem]"
       />
-      <label className="my-2 ">Email</label>
+      <label className="my-2 desktop:text-[2rem]">Email</label>
       <input
         type="email"
         ref={emailRef}
-        className="bg-[#1a1f16] hover:bg-[#f5ff00] text-[#f5ff00] hover:text-[#1a1f16] rounded-t-[8px] rounded-l-[8px] p-2 h-[30px]"
+        className="bg-[#1a1f16] hover:bg-[#f5ff00] text-[#f5ff00] hover:text-[#1a1f16] rounded-t-[8px] rounded-l-[8px] p-2 h-[30px] desktop:h-[3rem] desktop:text-[2rem]"
       />
-      <label className="my-2 ">Consulta</label>
+      <label className="my-2 desktop:text-[2rem]">Consulta</label>
       <textarea
         ref={textRef}
-        className="bg-[#1a1f16] hover:bg-[#f5ff00] text-[#f5ff00] hover:text-[#1a1f16] rounded-t-[8px] rounded-l-[8px] p-2"
+        className="bg-[#1a1f16] hover:bg-[#f5ff00] text-[#f5ff00] hover:text-[#1a1f16] rounded-t-[8px] rounded-l-[8px] p-2 desktop:h-[6rem] desktop:mb-[1rem] desktop:text-[2rem]"
       />
 
-      <Button classes="bg-[#1a1f16] text-[#f5ff00] text-[15px] mx-auto my-4 rounded-t-[8px] rounded-l-[8px] w-[118px] h-[30px]  ">
+      <Button classes="bg-[#1a1f16] text-[#f5ff00] text-[.9rem] notebook:text-[1.2rem] desktop:text-[2.5rem]  px-[.5rem] desktop:px-[1.5rem] py-[.2rem] mx-auto my-4 rounded-t-[8px] rounded-l-[8px]  desktop:text-[2rem]   ">
         enviar
       </Button>
     </form>

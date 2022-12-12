@@ -8,6 +8,7 @@ import ContactWrapper from "./components/layout/ContactWrapper";
 import ServicesWrapper from "./components/layout/ServicesWrapper";
 
 
+
 function App() {
   return (
     <div className="font-lato">
@@ -18,6 +19,8 @@ function App() {
       <AboutUsWrapper />
       <ContactWrapper />
       <Footer />
+
+ 
     </div>
   );
 }
